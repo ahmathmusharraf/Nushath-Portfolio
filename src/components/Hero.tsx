@@ -249,7 +249,7 @@ export default function Hero() {
                     className="w-full h-full object-cover object-top transition duration-700 hover:scale-103"
                     referrerPolicy="no-referrer"
                     onError={(e) => {
-                      e.currentTarget.src = "/src/assets/images/nushath_female_portrait_1781510723995.jpg";
+                      e.currentTarget.src = "https://raw.githubusercontent.com/ahmathmusharraf/Nushath-Portfolio/refs/heads/main/src/assets/images/nushath_female_portrait_1781510723995.jpg";
                     }}
                   />
 

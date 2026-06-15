@@ -87,8 +87,8 @@ export const EDUCATIONS: Education[] = [
   },
   {
     id: "edu-2",
-    degree: "Bachelor of Business in Management",
-    school: "UGC Approved Premium Institution",
+    degree: "Bachelor of Business Management (Hons)",
+    school: "Northumbria University",
     period: "Graduated",
     description: "Specialized study in global corporate economics, direct marketing paradigms, corporate governance, strategic leadership, and innovative startup operations.",
     details: [

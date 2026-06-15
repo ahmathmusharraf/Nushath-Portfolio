@@ -1,0 +1,119 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@350;400;500&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 10, 12, 0.3);
+}
+.light ::-webkit-scrollbar-track {
+  background: rgba(240, 240, 245, 0.3);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.2);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(212, 175, 55, 0.5);
+}
+
+/* Glassmorphism Presets */
+.glass-panel {
+  background: linear-gradient(135deg, rgba(20, 20, 25, 0.5) 0%, rgba(13, 13, 18, 0.7) 100%);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4), 
+              inset 0 1px 1px rgba(255, 255, 255, 0.05);
+  transition: all 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.light .glass-panel {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(245, 245, 250, 0.8) 100%);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.06),
+              inset 0 1px 1.5px rgba(255, 255, 255, 0.6);
+  transition: all 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-gold {
+  background: linear-gradient(135deg, rgba(25, 22, 17, 0.6) 0%, rgba(13, 11, 7, 0.8) 100%);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 8px 32px rgba(212, 175, 55, 0.06),
+              inset 0 1px 1.5px rgba(212, 175, 55, 0.15);
+  transition: all 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.light .glass-panel-gold {
+  background: linear-gradient(135deg, rgba(255, 253, 245, 0.8) 0%, rgba(250, 245, 230, 0.85) 100%);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(212, 175, 55, 0.32);
+  box-shadow: 0 8px 32px rgba(212, 175, 55, 0.12),
+              inset 0 1px 2px rgba(255, 255, 255, 0.9);
+  transition: all 400ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Active Glowing Elements */
+.glow-gold {
+  box-shadow: 0 0 30px rgba(212, 175, 55, 0.15);
+}
+.glow-blue {
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.15);
+}
+
+/* CSS Grid Dot Patterns */
+.bg-dots {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+.light .bg-dots {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Infinite Mesh Loop Background */
+@keyframes meshGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-mesh {
+  background-size: 200% 200%;
+  animation: meshGradient 20s ease infinite;
+}
+

@@ -249,7 +249,7 @@ export default function Hero() {
                     className="w-full h-full object-cover object-top transition duration-700 hover:scale-103"
                     referrerPolicy="no-referrer"
                     onError={(e) => {
-                      e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=640";
+                      e.currentTarget.src = "/src/assets/images/nushath_female_portrait_1781510723995.jpg";
                     }}
                   />
 

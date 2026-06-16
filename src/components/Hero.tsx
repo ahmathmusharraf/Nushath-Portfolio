@@ -38,7 +38,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden bg-[#030303] text-white py-16 lg:py-24"
+      className="relative lg:min-h-[100dvh] flex items-center justify-center overflow-hidden bg-[#030303] text-white py-10 lg:py-24"
     >
       {/* Background radial spotlights & architectural grid lines */}
       <div className="absolute inset-0 z-0 bg-dots opacity-30" />
@@ -249,7 +249,7 @@ export default function Hero() {
                     className="w-full h-full object-cover object-top transition duration-700 hover:scale-103"
                     referrerPolicy="no-referrer"
                     onError={(e) => {
-                      e.currentTarget.src = "https://raw.githubusercontent.com/ahmathmusharraf/Nushath-Portfolio/refs/heads/main/src/assets/images/nushath_female_portrait_1781510723995.jpg";
+                      e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=640";
                     }}
                   />
 

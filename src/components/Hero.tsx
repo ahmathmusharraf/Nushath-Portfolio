@@ -63,36 +63,6 @@ export default function Hero() {
           {/* Main Copy Area & Integrated Mobile Avatar */}
           <div className="lg:col-span-7 flex flex-col items-start space-y-4 sm:space-y-5 lg:space-y-6 text-left relative">
             
-            {/* Mobile Header: Mini profile capsule & Colombo time (Only visible on Mobile/Tablet < lg) */}
-            <div className="flex lg:hidden items-center justify-between w-full pb-3 border-b border-white/5">
-              <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 rounded-full ring-2 ring-[#d4af37]/35 p-0.5 bg-stone-950 flex-shrink-0 relative">
-                  <img
-                    src={PERSONAL_INFO.avatar}
-                    alt={PERSONAL_INFO.name}
-                    className="w-full h-full rounded-full object-cover object-top"
-                    referrerPolicy="no-referrer"
-                  />
-                  <span className="absolute bottom-0 right-0 block h-2 w-2 rounded-full bg-emerald-500 ring-1 ring-black animate-pulse" />
-                </div>
-                <div>
-                  <h4 className="font-display font-extrabold text-[#d4af37] text-xs">
-                    {PERSONAL_INFO.name}
-                  </h4>
-                  <div className="flex items-center space-x-1 text-[8px] font-mono text-gray-400">
-                    <MapPin size={8} className="text-rose-400" />
-                    <span>HQ // Colombo</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Live Desk Clock Specially Placed */}
-              <div className="text-right">
-                <span className="block text-[7px] font-mono text-gray-500 tracking-wider uppercase">DESK TIME</span>
-                <span className="text-[10px] font-mono text-emerald-400 font-bold">{timeStr}</span>
-              </div>
-            </div>
-
             {/* Elegant Minimal Badge (Large Screens Only) */}
             <motion.div
               initial={{ opacity: 0, y: -10 }}

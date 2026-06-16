@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Sparkles } from "lucide-react";
+import { PERSONAL_INFO } from "../data";
 
 export default function Loader({ onFinish }: { onFinish: () => void }) {
   const [percent, setPercent] = useState(0);
@@ -77,15 +78,22 @@ export default function Loader({ onFinish }: { onFinish: () => void }) {
               transition={{ duration: 0.8, ease: "easeOut" }}
               className="relative mb-8"
             >
-              <div className="w-20 h-20 rounded-full border border-[#d4af37]/30 flex items-center justify-center relative bg-gradient-to-b from-[#d4af37]/5 to-transparent shadow-[0_0_30px_rgba(212,175,55,0.05)]">
-                <span className="font-display font-extrabold text-2xl tracking-wider text-[#d4af37]">N</span>
-                <span className="font-display font-light text-2xl tracking-wider text-gray-500 -ml-1">N</span>
+              <div className="w-20 h-20 rounded-full border border-[#d4af37]/40 overflow-hidden flex items-center justify-center relative bg-[#0d0d12] shadow-[0_0_30px_rgba(212,175,55,0.15)] flex-shrink-0">
+                <img
+                  src={PERSONAL_INFO.avatar}
+                  alt={PERSONAL_INFO.name}
+                  className="w-full h-full object-cover object-top z-10"
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=120";
+                  }}
+                />
                 
                 {/* Orbital particles */}
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ repeat: Infinity, duration: 4, ease: "linear" }}
-                  className="absolute inset-[2px] rounded-full border border-dashed border-white/5"
+                  className="absolute inset-[2px] rounded-full border border-dashed border-white/10 z-20 pointer-events-none"
                 />
               </div>
               <motion.div

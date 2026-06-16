@@ -108,7 +108,7 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-center space-y-4 lg:space-y-10"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-center space-y-4 lg:space-y-6"
       >
         
         {/* Head Block - Ultra Compact on Mobile */}
@@ -249,7 +249,7 @@ export default function About() {
         {/* Global verified message banner of executive desk (Slightly smaller, fits within layout depth beautifully) */}
         <div className="text-center">
           <p className="text-[8.5px] font-mono text-gray-500 tracking-widest uppercase">
-            🛡️ ACCREDITED STRATEGIC RECORDS REGISTERED // EST. 2022
+            🛡️ ACCREDITED STRATEGIC RECORDS REGISTERED // EST. 2018
           </p>
         </div>
 

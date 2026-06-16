@@ -93,7 +93,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="relative lg:min-h-[100dvh] flex items-center justify-center overflow-hidden bg-[#0a0a0c] text-white py-10 lg:py-24 border-t border-white/5"
+      className="relative flex items-center justify-center overflow-hidden bg-[#0a0a0c] text-white py-10 lg:py-16 border-t border-white/5"
     >
       {/* Background Dots & Spotlight overlay */}
       <div className="absolute inset-0 z-0 bg-dots opacity-20 pointer-events-none" />

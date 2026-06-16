@@ -87,6 +87,7 @@ export default function Header({ darkMode, setDarkMode, activeSegment, setActive
                   alt={PERSONAL_INFO.name}
                   className="w-full h-full object-cover object-top"
                   referrerPolicy="no-referrer"
+                  decoding="async"
                   onError={(e) => {
                     e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=120";
                   }}

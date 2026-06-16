@@ -31,7 +31,7 @@ export const STATS: Stat[] = [
     value: 2,
     suffix: "",
     label: "Businesses Founded",
-    description: "Pioneering technological consultancies and global distribution firms"
+    description: "Pioneering technological consultancies and premier global travel agencies"
   },
   {
     id: "connections",
@@ -93,7 +93,7 @@ export const EDUCATIONS: Education[] = [
     description: "Specialized study in global corporate economics, direct marketing paradigms, corporate governance, strategic leadership, and innovative startup operations.",
     details: [
       "Acquired mastery in entrepreneurial risk evaluation, venture capital modeling, corporate metrics tracking, and employee scaling philosophies.",
-      "Authored strategic thesis analyzing digital disruption in global logistics markets, combining technological insights with fiscal metrics."
+      "Authored strategic thesis analyzing digital disruption in reservation systems and global ticketing markets, combining technological insights with fiscal metrics."
     ]
   }
 ];

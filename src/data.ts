@@ -14,7 +14,7 @@ export const PERSONAL_INFO = {
 export const STATS: Stat[] = [
   {
     id: "experience",
-    value: 8,
+    value: 5,
     suffix: "+",
     label: "Years of Experience",
     description: "In technology leadership, corporate growth, and platform development"

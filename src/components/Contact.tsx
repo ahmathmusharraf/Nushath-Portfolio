@@ -122,6 +122,8 @@ export default function Contact() {
                       alt={PERSONAL_INFO.name}
                       className="w-full h-full rounded-full object-cover object-top"
                       referrerPolicy="no-referrer"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <span className="absolute bottom-0 right-0 block h-2.5 w-2.5 rounded-full bg-emerald-400 ring-2 ring-[#030303] animate-pulse" />
                   </div>

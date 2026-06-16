@@ -54,7 +54,7 @@ export default function About() {
       quote: "Blending technical systems development with systematic business models structures capital.",
       paragraphs: [
         "Nushath Nisardeen is a premium software engineer and business strategist operating between complex technical systems architecture and global commercial expansion.",
-        "She does not simply construct enterprise software; she builds architectures ready for immediate supply-chain scale, cross-border compliance, and precise venture economics."
+        "She does not simply construct enterprise software; she builds architectures ready for immediate booking distribution scale, international travel regulations, and precise venture economics."
       ]
     },
     {
@@ -97,7 +97,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative lg:min-h-[100dvh] flex items-center justify-center overflow-hidden bg-[#0a0a0c] text-white py-10 lg:py-24 border-t border-white/5"
+      className="relative flex items-center justify-center overflow-hidden bg-[#0a0a0c] text-white py-10 lg:py-16 border-t border-white/5"
     >
       {/* Background Dots & Glow */}
       <div className="absolute inset-0 z-0 bg-dots opacity-20 pointer-events-none" />

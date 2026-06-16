@@ -38,7 +38,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative lg:min-h-[100dvh] flex items-center justify-center overflow-hidden bg-[#030303] text-white py-10 lg:py-24"
+      className="relative lg:min-h-[100dvh] flex items-center justify-center overflow-hidden bg-[#030303] text-white pt-28 pb-10 lg:py-24"
     >
       {/* Background radial spotlights & architectural grid lines */}
       <div className="absolute inset-0 z-0 bg-dots opacity-30" />

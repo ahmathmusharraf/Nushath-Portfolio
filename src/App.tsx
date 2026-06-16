@@ -1,15 +1,17 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense, lazy } from "react";
 import { Helmet } from "react-helmet-async";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import About from "./components/About";
-import Experience from "./components/Experience";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Achievements from "./components/Achievements";
-import Vision from "./components/Vision";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+
+// Lazy-load below-the-fold components to maximize initial paint speeds and cut bundle size
+const About = lazy(() => import("./components/About"));
+const Experience = lazy(() => import("./components/Experience"));
+const Projects = lazy(() => import("./components/Projects"));
+const Skills = lazy(() => import("./components/Skills"));
+const Achievements = lazy(() => import("./components/Achievements"));
+const Vision = lazy(() => import("./components/Vision"));
+const Contact = lazy(() => import("./components/Contact"));
+const Footer = lazy(() => import("./components/Footer"));
 
 interface SEOMetadata {
   title: string;
@@ -118,30 +120,34 @@ export default function App() {
         {/* HERO SECTION */}
         <Hero />
 
-        {/* BIOGRAPHICAL DETAILS */}
-        <About />
+        <Suspense fallback={<div className="min-h-[40vh] flex items-center justify-center bg-[#030303]" />}>
+          {/* BIOGRAPHICAL DETAILS */}
+          <About />
 
-        {/* EXPERIENCE & EDUCATION TIMELINE */}
-        <Experience />
+          {/* EXPERIENCE & EDUCATION TIMELINE */}
+          <Experience />
 
-        {/* SOFTWARE ARCHITECTURES & ACTIVE SERVICES */}
-        <Projects />
+          {/* SOFTWARE ARCHITECTURES & ACTIVE SERVICES */}
+          <Projects />
 
-        {/* MULTI-DISCIPLINARY TECHNICAL & BUSINESS SKILLS */}
-        <Skills />
+          {/* MULTI-DISCIPLINARY TECHNICAL & BUSINESS SKILLS */}
+          <Skills />
 
-        {/* ENTERPRISE MILESTONES & ACHIEVEMENTS */}
-        <Achievements />
+          {/* ENTERPRISE MILESTONES & ACHIEVEMENTS */}
+          <Achievements />
 
-        {/* MASTER CORPORATE VISION AND STRATEGY */}
-        <Vision />
+          {/* MASTER CORPORATE VISION AND STRATEGY */}
+          <Vision />
 
-        {/* INQUIRIES & NETWORKING CHANNELS */}
-        <Contact />
+          {/* INQUIRIES & NETWORKING CHANNELS */}
+          <Contact />
+        </Suspense>
       </main>
 
       {/* FOOTER */}
-      <Footer />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }

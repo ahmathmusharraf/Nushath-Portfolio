@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Code2, ExternalLink, Sparkles, Server, ShoppingCart, TrendingUp, Layers, Cpu, Compass } from "lucide-react";
+import { Code2, ExternalLink, Sparkles, Server, ShoppingCart, TrendingUp, Layers, Cpu, Compass, Globe } from "lucide-react";
 import { PROJECTS } from "../data";
 
 export default function Projects() {
@@ -22,6 +22,13 @@ export default function Projects() {
           border: "border-[#3b82f6]/20 hover:border-[#3b82f6]/50",
           text: "text-[#3b82f6]"
         };
+      case "Travel Tech":
+        return {
+          icon: <Globe className="text-emerald-400" size={14} />,
+          bg: "bg-emerald-500/5",
+          border: "border-emerald-500/20 hover:border-emerald-500/50",
+          text: "text-emerald-400"
+        };
       case "Logistics Tech":
         return {
           icon: <Server className="text-purple-400" size={14} />,
@@ -42,7 +49,7 @@ export default function Projects() {
   const projectShortNames: Record<string, string> = {
     "proj-1": "KALI Gilt",
     "proj-2": "Nuzi SaaS",
-    "proj-3": "Orbit Supply"
+    "proj-3": "Orbit Ticket"
   };
 
   const activeProj = PROJECTS.find((p) => p.id === activeProjId) || PROJECTS[0];
@@ -51,7 +58,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative lg:min-h-[100dvh] flex items-center justify-center overflow-hidden bg-[#030303] text-white py-10 lg:py-24 border-t border-white/5"
+      className="relative flex items-center justify-center overflow-hidden bg-[#030303] text-white py-10 lg:py-16 border-t border-white/5"
     >
       {/* Background Micro Details for Premium Feel */}
       <div className="absolute inset-0 z-0 bg-dots opacity-20 pointer-events-none" />

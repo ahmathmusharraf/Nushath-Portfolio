@@ -1,6 +1,6 @@
 import { Stat, Experience, Education, SkillCategory, Achievement, Project } from "./types";
 
-export const PORTRAIT_PATH = "https://raw.githubusercontent.com/ahmathmusharraf/Nushath-Portfolio/refs/heads/main/src/assets/images/nushath_female_portrait_1781510723995.jpg";
+export const PORTRAIT_PATH = "https://raw.githubusercontent.com/ahmathmusharraf/Nushath-Portfolio/refs/heads/main/nush.jpg";
 
 export const PERSONAL_INFO = {
   name: "Nushath Nisardeen",

@@ -109,12 +109,12 @@ export default function App() {
         {/* Open Graph Tags for Section Sharing */}
         <meta property="og:title" content={currentSEO.title} />
         <meta property="og:description" content={currentSEO.description} />
-        <meta property="og:image" content="https://raw.githubusercontent.com/ahmathmusharraf/Nushath-Portfolio/refs/heads/main/src/assets/images/nushath_female_portrait_1781510723995.jpg" />
+        <meta property="og:image" content="https://raw.githubusercontent.com/ahmathmusharraf/Nushath-Portfolio/refs/heads/main/nush.jpg" />
         
         {/* Twitter Card Tags */}
         <meta name="twitter:title" content={currentSEO.title} />
         <meta name="twitter:description" content={currentSEO.description} />
-        <meta name="twitter:image" content="https://raw.githubusercontent.com/ahmathmusharraf/Nushath-Portfolio/refs/heads/main/src/assets/images/nushath_female_portrait_1781510723995.jpg" />
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/ahmathmusharraf/Nushath-Portfolio/refs/heads/main/nush.jpg" />
       </Helmet>
 
       {/* Background Particle Effects / Custom Atmospheric Lights */}

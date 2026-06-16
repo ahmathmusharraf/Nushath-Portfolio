@@ -53,8 +53,8 @@ export default function About() {
       tagline: "Multidisciplinary technical & growth leader.",
       quote: "Blending technical systems development with systematic business models structures capital.",
       paragraphs: [
-        "Nushath Nisardeen is a premium software engineer and business strategist operating between complex technical systems architecture and global commercial expansion.",
-        "She does not simply construct enterprise software; she builds architectures ready for immediate booking distribution scale, international travel regulations, and precise venture economics."
+        "I am a premium software engineer and business strategist operating between complex technical systems architecture and global commercial expansion.",
+        "I do not simply construct enterprise software; I build architectures ready for immediate booking distribution scale, international travel regulations, and precise venture economics."
       ]
     },
     {
@@ -63,8 +63,8 @@ export default function About() {
       tagline: "Robust, scalable, defensive codebases.",
       quote: "Systems must be elegant, modular, error-resilient, and scaled to sustain continuous operations.",
       paragraphs: [
-        "Specialized in modern API design, cloud-native deployments, and server architecture with a focused academic training (B.Sc in Software Engineering).",
-        "Her structural layouts emphasize clean database patterns, defensive data caching flows, and secure infrastructure. She ensures code remains highly performant Under peak load."
+        "I specialize in modern API design, cloud-native deployments, and server architecture with a focused academic training (B.Sc in Software Engineering).",
+        "My structural layouts emphasize clean database patterns, defensive data caching flows, and secure infrastructure, ensuring code remains highly performant under peak load."
       ]
     },
     {
@@ -73,8 +73,8 @@ export default function About() {
       tagline: "Corporate governance & market economics.",
       quote: "Strategic management turns technical engines into premium institutional value.",
       paragraphs: [
-        "Backed by a Bachelor of Business in Management, Nushath coordinates market expansions, joint-venture formations, and process automations.",
-        "Her approach fuses engineering goals with core business parameters, assuring cross-regional corporate viability and continuous enterprise growth."
+        "Backed by a Bachelor of Business in Management, I coordinate market expansions, joint-venture formations, and process automations.",
+        "My approach fuses engineering goals with core business parameters, assuring cross-regional corporate viability and continuous enterprise growth."
       ]
     }
   ];

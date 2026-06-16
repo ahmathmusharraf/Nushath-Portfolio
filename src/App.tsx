@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import Loader from "./components/Loader";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -64,19 +63,6 @@ const SECTION_SEO: Record<string, SEOMetadata> = {
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
   const [activeSegment, setActiveSegment] = useState("home");
-  const [loading, setLoading] = useState(true);
-
-  // Sync scroll lock during loaders
-  useEffect(() => {
-    if (loading) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-    return () => {
-      document.body.style.overflow = "unset";
-    };
-  }, [loading]);
 
   // Sync index.html root component with active dark class
   useEffect(() => {
@@ -98,8 +84,6 @@ export default function App() {
     <div className={`min-h-screen text-white font-sans transition-colors duration-500 overflow-x-hidden ${
       darkMode ? "bg-[#030303]" : "bg-[#ffffff]"
     }`}>
-      {/* High-grade responsive web loader */}
-      <Loader onFinish={() => setLoading(false)} />
 
       <Helmet>
         <title>{currentSEO.title}</title>

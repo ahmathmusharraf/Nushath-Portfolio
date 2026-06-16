@@ -51,7 +51,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden bg-[#030303] text-white py-16 lg:py-24 border-t border-white/5"
+      className="relative lg:min-h-[100dvh] flex items-center justify-center overflow-hidden bg-[#030303] text-white py-10 lg:py-24 border-t border-white/5"
     >
       {/* Background Micro Details for Premium Feel */}
       <div className="absolute inset-0 z-0 bg-dots opacity-20 pointer-events-none" />

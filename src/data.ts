@@ -63,13 +63,13 @@ export const EXPERIENCES: Experience[] = [
     company: "Orbit Overseas",
     companyUrl: "https://www.orbitoverseaslk.com/",
     period: "2021 - Present",
-    description: "Driving cross-border collaborations, supply-chain innovations, international trade networks, and digital brand presence to capture international market share.",
+    description: "Co-founded and driving strategic operational growth for Orbit Overseas, a premier international air ticketing office and travel solutions agency.",
     details: [
-      "Establishing global joint-ventures and trade networks, expanding service portfolios into crucial overseas regions.",
-      "Structuring growth operations and digital communications across regulatory regions with reliable performance metrics.",
-      "Leading dual-continent negotiations and designing web-enabled trade channels that simplify partner onboarding workflows."
+      "Establishing direct air ticketing pipelines, GDS integrations, and global airline partner networks to streamline international travel reservations.",
+      "Designing responsive reservation architectures and automated ticketing flows that optimize partner commission structure and client fulfillment cycles.",
+      "Structuring cross-region customer retention workflows and digital ticketing interfaces to ensure rapid, seamless booking experiences for corporate and leisure clients."
     ],
-    skills: ["Business Development", "Entrepreneurship", "Decision Making", "Innovation", "Strategic Planning"]
+    skills: ["Air Ticketing", "GDS Systems", "Business Development", "Travel Management", "Strategic Operations"]
   }
 ];
 
@@ -195,12 +195,12 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "proj-3",
-    title: "Orbit Supply Chain Dashboard",
+    title: "Orbit Ticketing & Reservation Platform",
     url: "https://www.orbitoverseaslk.com/",
-    description: "High-concurrency logistics interface facilitating live maritime and trade dispatch updates.",
-    longDescription: "Formulated to optimize regional supply pipelines for Orbit Overseas. Leverages real-time tracking widgets, custom map layers, and compliance validation pipelines to lower operational delays.",
-    techStack: ["React", "Tailwind CSS", "Google Maps Platform", "REST APIs", "Lucide Icons"],
-    category: "Logistics Tech",
+    description: "High-performance air ticketing and travel reservation interface built to handle real-time flight bookings.",
+    longDescription: "Formulated to optimize booking flows and airfare routing for Orbit Overseas. Leverages real-time flight search metrics, integrated GDS reservation logs, and compliance validation pipelines to lower booking overhead and automate ticketing issues.",
+    techStack: ["React", "Tailwind CSS", "GDS API Integrations", "REST Services", "Lucide Icons"],
+    category: "Travel Tech",
     featured: false
   }
 ];

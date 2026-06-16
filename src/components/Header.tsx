@@ -80,11 +80,17 @@ export default function Header({ darkMode, setDarkMode, activeSegment, setActive
             onClick={() => handleNavClick("home")}
             className="group flex items-center space-x-2 cursor-pointer"
           >
-            <div className="relative w-9 h-9 rounded-lg flex items-center justify-center bg-gradient-to-tr from-[#d4af37] via-[#3b82f6] to-[#8b5cf6] p-[1.5px] transition-transform duration-300 group-hover:scale-105">
-              <div className="w-full h-full rounded-[7px] bg-[#0d0d12] dark:bg-[#0d0d12] light:bg-white flex items-center justify-center">
-                <span className="font-display font-semibold text-xs tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#d4af37] to-[#ecf0f1]">
-                  NN
-                </span>
+            <div className="relative w-9 h-9 rounded-full bg-gradient-to-tr from-[#d4af37] via-[#3b82f6] to-[#d4af37] p-[1.5px] transition-transform duration-300 group-hover:scale-105 shadow-md flex-shrink-0">
+              <div className="w-full h-full rounded-full bg-[#0d0d12] overflow-hidden flex items-center justify-center">
+                <img
+                  src={PERSONAL_INFO.avatar}
+                  alt={PERSONAL_INFO.name}
+                  className="w-full h-full object-cover object-top"
+                  referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=120";
+                  }}
+                />
               </div>
             </div>
             <div className="flex flex-col">

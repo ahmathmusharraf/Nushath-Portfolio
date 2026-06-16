@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
   name: "Nushath Nisardeen",
   title: "Software Engineer • Business Strategist • Entrepreneur • CEO",
   avatar: PORTRAIT_PATH,
-  introduction: "Passionate entrepreneur, software engineer, and business leader dedicated to building innovative digital solutions and creating global business opportunities. Combining technology expertise with strategic business management to drive impactful growth.",
+  introduction: "Software Engineer, Entrepreneur & Business Strategist building innovative digital products and scalable businesses worldwide.",
   linkedinUrl: "https://www.linkedin.com/in/nushathnisardeen/",
   email: "nushathnisardeen@gmail.com",
 };

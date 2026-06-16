@@ -38,7 +38,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative lg:min-h-[100dvh] flex items-center justify-center overflow-hidden bg-[#030303] text-white pt-28 pb-10 lg:py-24"
+      className="relative flex items-center justify-center overflow-hidden bg-[#030303] text-white pt-28 pb-10 lg:pt-28 lg:pb-16"
     >
       {/* Background radial spotlights & architectural grid lines */}
       <div className="absolute inset-0 z-0 bg-dots opacity-30" />
@@ -53,7 +53,7 @@ export default function Hero() {
       <div className="absolute bottom-[5%] right-[-5%] w-[45%] h-[45%] rounded-full bg-indigo-900/15 blur-[120px] pointer-events-none" />
       <div className="absolute top-[40%] left-[25%] w-[250px] h-[250px] bg-[#d4af37]/5 rounded-full blur-[80px] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-center space-y-6 lg:space-y-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full flex flex-col justify-center space-y-6 lg:space-y-6">
         
         {/* Spacer to push content to middle on mobile */}
         <div className="hidden lg:block lg:h-4" />

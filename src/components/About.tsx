@@ -249,7 +249,7 @@ export default function About() {
         {/* Global verified message banner of executive desk (Slightly smaller, fits within layout depth beautifully) */}
         <div className="text-center">
           <p className="text-[8.5px] font-mono text-gray-500 tracking-widest uppercase">
-            🛡️ ACCREDITED STRATEGIC RECORDS REGISTERED // EST. 2018
+            🛡️ ACCREDITED STRATEGIC RECORDS REGISTERED // EST. 2022
           </p>
         </div>
 

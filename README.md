@@ -1,20 +1,37 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# 🌐 Nushath-Portfolio
+Nushath Nisardeen Personal Portfolio Website
+✨ Designed & Developed by Mushi Editz
 
-# Run and deploy your AI Studio app
+## 📖 About
+Nushath-Portfolio is a modern, responsive personal portfolio website created to showcase the professional journey, skills, projects, achievements, and contact information of Nushath Nisardeen.
+The website is designed with a clean user interface, smooth animations, and a fully responsive layout to provide an excellent user experience across all devices.
 
-This contains everything you need to run your app locally.
+## 🚀 Live Website
+Portfolio Link: https://nushath-portfolio.vercel.app/
 
-View your app in AI Studio: https://ai.studio/apps/a7b125d1-f823-463c-a108-0182191bb23c
+## ✨ Features
+* Responsive Design for Mobile, Tablet, and Desktop
+* Modern and Clean User Interface
+* Smooth Animations and Transitions
+* About Me Section
+* Skills Showcase
+* Projects Portfolio
+* Experience & Education Details
+* Contact Section
+* Fast Loading and SEO Friendly
 
-## Run Locally
+## 🎯 Purpose
+This portfolio serves as a professional online presence for Nushath Nisardeen, showcasing:
 
-**Prerequisites:**  Node.js
+* Professional Experience
+* Technical Skills
+* Featured Projects
+* Achievements
+* Contact Information
 
+## 👨‍💻 Creator
+Designed & Developed by Mushi Editz
+Creative Developer | Digital Marketer | UI/UX Designer
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📄 License
+This project is created for personal portfolio purposes and is intended for showcasing professional work.

@@ -218,6 +218,8 @@ export default function Hero() {
                     alt={PERSONAL_INFO.name}
                     className="w-full h-full object-cover object-top transition duration-700 hover:scale-103"
                     referrerPolicy="no-referrer"
+                    decoding="async"
+                    fetchPriority="high"
                     onError={(e) => {
                       e.currentTarget.src = "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=640";
                     }}

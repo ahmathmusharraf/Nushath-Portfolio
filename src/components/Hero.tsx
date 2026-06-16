@@ -63,19 +63,7 @@ export default function Hero() {
           {/* Main Copy Area & Integrated Mobile Avatar */}
           <div className="lg:col-span-7 flex flex-col items-start space-y-4 sm:space-y-5 lg:space-y-6 text-left relative">
             
-            {/* Elegant Minimal Badge (Large Screens Only) */}
-            <motion.div
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="hidden lg:inline-flex items-center space-x-2.5 px-3 py-1 rounded-full bg-stone-900/80 border border-stone-800 text-[#d4af37] text-[10px] sm:text-xs tracking-wider uppercase font-mono shadow-inner"
-            >
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-              </span>
-              <span>Available for International Ventures & Alliances</span>
-            </motion.div>
+
 
             {/* Typography Stack */}
             <div className="space-y-2 sm:space-y-4 w-full">

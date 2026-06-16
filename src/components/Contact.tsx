@@ -89,7 +89,7 @@ export default function Contact() {
       >
         
         {/* Compact section header */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-2">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-5 lg:mb-6 gap-2">
           <div className="text-left">
             <div className="flex items-center space-x-1.5">
               <span className="p-0.5 rounded bg-[#d4af37]/15 border border-[#d4af37]/25 text-[#d4af37]">
